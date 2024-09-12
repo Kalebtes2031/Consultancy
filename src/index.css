@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Gradient Border for the Image */
+.border-gradient-glow {
+  border-radius: 1.5rem; /* Matches rounded-3xl (1.5rem) */
+  /* border: 1px solid transparent; */
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ff9900);
+  padding: 3px; /* Adjust the size of the border */
+  background-clip: padding-box; /* Ensures border color only */
+  box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.6), /* Inner glow */
+              0px 0px 30px 6px rgba(0, 255, 255, 0.4);    /* Outer glow */
+}
+
+/* Keyframes for subtle float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom animation class for floating effect */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
