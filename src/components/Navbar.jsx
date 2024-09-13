@@ -42,7 +42,7 @@ const Navbar = () => {
             alt="logo"
           />
           <p className="text-[18px] text-white font-bold cursor-pointer">
-            Consultancy
+           Kaleb Consultancy
           </p>
         </Link>
         <ul className="hidden sm:flex list-none flex-row gap-10">
