@@ -4,11 +4,11 @@ const About = () => {
   return (
     <section id="about">
       <div className="flex flex-col justify-center p-6 items-center">
-        <h1 className="text-center font-serif font-extrabold text-3xl p-1">
+        <h1 className="text-center poppins-black font-extrabold text-3xl p-1">
           ABOUT US
         </h1>
         <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
-        <p className="w-[800px] text-center font-serif">
+        <p className="w-[800px] text-center poppins-light">
           Kaleb Consultancy is one of the top educational consultants and
           Overseas-Study Experts that guides you to the top of success.
           Moreover, we offer chances for a wide variety of courses in various
@@ -20,7 +20,7 @@ const About = () => {
         <div className="flex flex-col p-4 ">
           <h2 className="font-serif font-extrabold text-xl p-1">KC?</h2>
           <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
-          <p className="font-serif">
+          <p className="poppins-light">
             KC is a premier overseas education facilitator and a credible
             consultation enterprise that offers the very best learning
             opportunities worldwide to a wide range of students.
@@ -29,7 +29,7 @@ const About = () => {
             Our Goal
           </h2>
           <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
-          <p className="font-serif">
+          <p className="poppins-light">
             We aim to offer you genuine, quality, comprehensive, unbiased, and
             ethical professional education services.
           </p>
@@ -47,14 +47,14 @@ const About = () => {
             study!
           </h2>
           <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
-          <p className="font-serif">
+          <p className="poppins-light">
             We help you to choose the best university and country based on your
             background and interests. Our career counseling and admission
             guidance help you to choose a suitable course abroad.
           </p>
           <h2 className="font-serif font-extrabold text-xl p-1 mt-6">Vision</h2>
           <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
-          <p className="font-serif">
+          <p className="poppins-light">
             We cherish the values of transparency, accountability as well as
             reliability.
           </p>

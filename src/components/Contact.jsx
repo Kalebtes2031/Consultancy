@@ -55,10 +55,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 max-w-5xl mx-auto bg-gradient-to-r">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-serif font-extrabold text-gray-800 mb-4">Get in Touch</h1>
-        <p className="text-lg font-serif text-gray-600">
+    <section id="contact" className="py-12 px-4 max-w-5xl mx-auto bg-gradient-to-r">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl poppins-black font-extrabold text-gray-800 mb-4">Get in Touch</h1>
+        <p className="text-lg poppins-light text-gray-600">
           We're here to assist you with any queries or concerns. Fill out the form below and we will get back to you soon.
         </p>
       </div>

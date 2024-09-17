@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section id="service">
       <div className="flex flex-col justify-center p-6 items-center">
-        <h1 className="text-center font-serif font-extrabold text-3xl p-1">
+        <h1 className="text-center poppins-black font-extrabold text-3xl p-1">
           OUR SERVICES
         </h1>
         <hr className="w-24 h-2 bg-slate-950 rounded border-2" />
@@ -49,10 +49,10 @@ const Services = () => {
                 alt={item.title}
                 className="w-20 h-20 mb-4  object-cover shadow-md transition-transform duration-500 transform group-hover:rotate-6"
               />
-              <h3 className="font-serif font-extrabold text-2xl mb-3 text-center">
+              <h3 className="poppins-bold font-extrabold text-2xl mb-3 text-center">
                 {item.title}
               </h3>
-              <p className="font-serif text-center text-base leading-relaxed">
+              <p className="poppins-light text-center text-base leading-relaxed">
                 {item.description}
               </p>
             </div>

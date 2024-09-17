@@ -32,7 +32,7 @@ const Process = () => {
     <section id="process" className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 min-h-screen py-16 relative overflow-hidden">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white mb-2">
+        <h1 className="text-4xl font-bold poppins-black text-white mb-2">
           APPLICATION PROCESS
         </h1>
         <div className="relative inline-block">
@@ -53,7 +53,7 @@ const Process = () => {
             ${index === 2 ? "left-[60%] bottom-[44%]" : ""}
             ${index === 3 ? "left-[95%] bottom-[62%]" : ""}
             `}
-            style={{ width: "200px", height: "200px" }} // Equal size for all steps
+            style={{ width: "250px", height: "250px" }} // Equal size for all steps
           >
             {/* Step Circle */}
             <div className="absolute top-[-23px] left-[-24px] w-16 h-16 bg-white rounded-full border-4 border-yellow-500 flex items-center justify-center p-2">
@@ -64,10 +64,10 @@ const Process = () => {
             <img
               src={step.imgSrc}
               alt={step.stepName}
-              className="w-16 h-16 mb-4 rounded shadow-lg transition-transform duration-500 transform hover:rotate-6"
+              className="w-16 h-16 mb-5 rounded shadow-lg transition-transform duration-500 transform hover:rotate-6"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2 ml-3">{step.stepName}</h3>
-            <p className="text-gray-600 font-serif text-center text-sm ">{step.description}</p>
+            <h3 className="text-xl font-semibold poppins-black text-gray-800 mb-3 ml-3">{step.stepName}</h3>
+            <p className="text-gray-600 poppins-regular text-center text-sm ">{step.description}</p>
           </div>
         ))}
       </div>

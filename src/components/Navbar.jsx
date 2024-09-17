@@ -6,10 +6,27 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState(null);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Change navbar background color on scroll
+  // Change navbar background color and position on scroll
   const changeBackground = () => {
-    if (window.scrollY >= 80) {
+    const currentScrollY = window.scrollY;
+
+    // Detect scroll direction
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      setScrollDirection("down");
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      setScrollDirection("up");
+    }
+
+    // Store current scroll position
+    setLastScrollY(currentScrollY);
+
+    // Change background if scrolled past a certain point
+    if (currentScrollY >= 80) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -19,7 +36,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
-  }, []);
+  }, [lastScrollY]);
 
   const lists = [
     { id: "about", title: "Introduction" },
@@ -32,7 +49,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-20 top-0 py-5 ${
         scrollNav ? "bg-zinc-600" : "bg-transparent"
-      } transition-colors duration-300`}
+      } ${scrollDirection === "up" ? "fixed top-0" : "hidden"} transition-colors duration-300`}
     >
       <div className="flex w-full justify-between items-center max-w-7xl mx-auto">
         <Link className="flex items-center gap-2">
@@ -41,7 +58,7 @@ const Navbar = () => {
             className="w-12 h-12 object-cover rounded-full"
             alt="logo"
           />
-          <p className="text-[18px] text-white font-bold cursor-pointer">
+          <p className="text-[18px] text-white font-bold poppins-medium cursor-pointer">
            Kaleb Consultancy
           </p>
         </Link>
@@ -49,7 +66,7 @@ const Navbar = () => {
           {lists.map((list) => (
             <li
               key={list.id}
-              className="text-[18px] text-white font-medium cursor-pointer"
+              className="text-[18px] text-white font-medium poppins-medium cursor-pointer"
             >
               <a href={`#${list.id}`}>{list.title}</a>
             </li>

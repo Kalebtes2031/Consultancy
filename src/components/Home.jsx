@@ -12,11 +12,11 @@ const Process = () => {
       {/* Content on top of the background */}
       <div className="absolute inset-0 top-28 flex flex-row items-center justify-between max-w-7xl mx-auto px-4 z-10">
         <div className="flex-1 mr-6">
-          <p className=" font-bold leading-relaxed text-white">
+          <p className=" poppins-bold leading-relaxed text-white">
            <span className="text-5xl">Travel <span className="text-teal-400">and</span> Educational <span className="text-teal-400">Consultant</span></span> 
            <hr className="w-16 mt-4 border-2 rounded"/>
             <br />
-            "Your trusted one"
+            <span className="poppins-medium">"Your trusted one"</span> 
           </p>
         </div>
         <div className="flex-1 text-center">
