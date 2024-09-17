@@ -1,9 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Process from "./components/Process";
+import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Services";
-import Feedback from "./components/Feedback";
+import Process from "./components/Process";
 import Contact from "./components/Contact";
 
 
@@ -13,11 +13,11 @@ const App = () => {
       <div className='relative z-0 bg-primary'>
         <div className=' bg-cover bg-no-repeat bg-center'>
           <Navbar/>
-          <Process/>
+          <Home/>
         </div>
         <About/>
         <Experience/>
-        <Feedback/>
+        <Process/>
         <div className='relative z-0'>
           <Contact/>
           {/* <StarsCanvas /> */}
