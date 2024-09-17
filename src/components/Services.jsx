@@ -5,7 +5,7 @@ const Services = () => {
     <section>
       <div className="flex flex-col justify-center p-6 items-center">
         <h1 className="text-center font-serif font-extrabold text-3xl p-1">
-          Our Services
+          OUR SERVICES
         </h1>
         <hr className="w-24 h-2 bg-slate-950 rounded border-2" />
       </div>

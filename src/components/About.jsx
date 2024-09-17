@@ -5,7 +5,7 @@ const About = () => {
     <section id="about">
       <div className="flex flex-col justify-center p-6 items-center">
         <h1 className="text-center font-serif font-extrabold text-3xl p-1">
-          About Us
+          ABOUT US
         </h1>
         <hr className="w-24 h-2 bg-slate-950 rounded border-2 mb-8" />
         <p className="w-[800px] text-center font-serif">
