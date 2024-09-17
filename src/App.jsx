@@ -5,7 +5,7 @@ import About from "./components/About";
 import Experience from "./components/Services";
 import Process from "./components/Process";
 import Contact from "./components/Contact";
-
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -20,8 +20,8 @@ const App = () => {
         <Process/>
         <div className='relative z-0'>
           <Contact/>
-          {/* <StarsCanvas /> */}
         </div>
+          <Footer/>
       </div>
     </BrowserRouter>
   );
